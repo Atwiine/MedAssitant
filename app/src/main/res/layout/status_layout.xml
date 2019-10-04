@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/bgshape"
+    android:backgroundTint="@color/aux1"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure you have completed this medication?"
+        android:fontFamily="@font/lato"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/aux4"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/yes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text="Yes"
+        android:textColor="@color/aux8"
+        android:textSize="17sp"
+        android:fontFamily="@font/lato"/>
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_toStartOf="@id/yes"
+        android:layout_marginEnd="20dp"
+        android:text="Cancel"
+        android:textColor="@color/aux10"
+        android:textSize="15sp"
+        android:fontFamily="@font/lato"/>
+</RelativeLayout>

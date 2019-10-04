@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/aux1"
+    tools:context=".Dash">
+
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/aux1"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title=" "
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-20dp"
+                android:fontFamily="@font/patua_one"
+                android:text="Medications"
+                android:textColor="@color/aux4"
+                android:textSize="28sp" />
+
+        </androidx.appcompat.widget.Toolbar>
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <AutoCompleteTextView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgshape"
+        android:backgroundTint="@color/aux5"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:hint="Search mediction"
+        android:textColorHint="@color/aux6"
+        android:textColor="@color/aux6"
+        android:padding="6dp"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="5dp"
+        android:textSize="17sp"/>
+    <include
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        layout="@layout/content_dash"
+       android:layout_below="@+id/search" />
+    <LinearLayout
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/lg1"
+            android:tint="@color/aux6"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No medications yet."
+            android:textSize="16sp"
+            android:fontFamily="@font/lato"
+            android:textColor="@color/aux6"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "875496666131",
+    "firebase_url": "https://medassistant-d805e.firebaseio.com",
+    "project_id": "medassistant-d805e",
+    "storage_bucket": "medassistant-d805e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:875496666131:android:36cb55fbf034877e",
+        "android_client_info": {
+          "package_name": "com.dcinspirations.medassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "875496666131-qrk6t02m6tmkmjlkm59cc8qbnrrj6kpa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dcinspirations.medassistant",
+            "certificate_hash": "57754a7efa448a71110108e384248031cc6102a1"
+          }
+        },
+        {
+          "client_id": "875496666131-5bci9pv2ui3pdncjn6l85ocfu3j1gj6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOTettr5NqUXEblI4wNtgpSNXbXBhF0D8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "875496666131-5bci9pv2ui3pdncjn6l85ocfu3j1gj6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

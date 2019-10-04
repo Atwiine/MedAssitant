@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_dash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:background="@color/colorPrimary"
+        android:animateLayoutChanges="true">
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/nav_header_dash"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="140dp"
+        android:animateLayoutChanges="true">
+
+        <!--<TextView-->
+            <!--android:id="@+id/home"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableStart="@drawable/home"-->
+            <!--android:text="Home"-->
+            <!--android:textColor="@color/aux1"-->
+            <!--android:textSize="15sp"-->
+            <!--android:fontFamily="@font/lato"-->
+            <!--android:padding="16dp"-->
+            <!--android:drawablePadding="30dp"-->
+            <!--android:animateLayoutChanges="true"-->
+            <!--android:background="@color/colorPrimaryDark"/>-->
+
+        <TextView
+            android:id="@+id/med"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:background="@drawable/bgshape2"
+            android:drawableStart="@drawable/med"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/lato"
+            android:padding="16dp"
+            android:text="Medications"
+            android:textColor="@color/aux1"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/ud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:drawableStart="@drawable/det"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/lato"
+            android:padding="16dp"
+            android:text="User Details"
+            android:textColor="@color/aux1"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"/>
+
+
+
+        <!--<TextView-->
+            <!--android:id="@+id/smed"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Set Medications"-->
+            <!--android:textColor="@color/aux1"-->
+            <!--android:textSize="15sp"-->
+            <!--android:fontFamily="@font/lato"-->
+            <!--android:paddingStart="80dp"-->
+            <!--android:paddingTop="14dp"-->
+            <!--android:paddingBottom="16dp"-->
+            <!--android:animateLayoutChanges="true"-->
+            <!--android:visibility="gone"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/vmed"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="View Medications"-->
+            <!--android:textColor="@color/aux1"-->
+            <!--android:textSize="15sp"-->
+            <!--android:fontFamily="@font/lato"-->
+            <!--android:paddingStart="80dp"-->
+            <!--android:paddingTop="16dp"-->
+            <!--android:paddingBottom="16dp"-->
+            <!--android:animateLayoutChanges="true"-->
+            <!--android:visibility="gone"/>-->
+        <TextView
+            android:id="@+id/ec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/doc"
+            android:text="Emergency Contact"
+            android:textColor="@color/aux1"
+            android:textSize="15sp"
+            android:fontFamily="@font/lato"
+            android:background="@null"
+            android:padding="16dp"
+            android:drawablePadding="20dp"
+            android:animateLayoutChanges="true"
+            android:layout_marginEnd="10dp"/>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableStart="@drawable/log"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/lato"
+            android:padding="16dp"
+            android:text="Logout"
+            android:textColor="@color/aux1"
+            android:textSize="15sp"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
