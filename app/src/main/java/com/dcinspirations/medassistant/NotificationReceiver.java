@@ -24,7 +24,7 @@ public class NotificationReceiver extends BroadcastReceiver {
         DatabaseClass db = new DatabaseClass(context);
         String medinfo[] = intent.getExtras().getStringArray("medinfo");
         String basic[] = new Sp().getBasics();
-//        new MailAsync().execute(basic[1],"MedAssitant Reminder","Time for your " + medinfo[1] + " medication, " + medinfo[3] + "(" + medinfo[4] + " per day)");
+        new MailAsync().execute(basic[1],"MedAssitant Reminder","Time for your " + medinfo[1] + " medication, " + medinfo[3] + "(" + medinfo[4] + " per day)");
 
 //        String[] startdate = medinfo[5].split("/");
 //        String[] today = getDate().split("/");
